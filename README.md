@@ -1,4 +1,4 @@
-# Cyclone 🌀
+# CyClone 🌀
 <p align="center">
   <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/gradient.svg" width="140">
   <br>
