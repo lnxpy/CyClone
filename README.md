@@ -1,6 +1,6 @@
 # CyClone 🌀
 <p align="center">
-  <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/gradient.svg" width="140">
+  <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/temp.svg" width="140">
   <br>
   <br>
   <span>★ Make Updater Scripts for Your Python Projects ★</span>
