@@ -26,4 +26,4 @@ First of all, CyClone checks up your git and tries to pull all changes from the 
 Licensed from [MIT](https://opensource.org/licenses/MIT).
 
 ## Fork
-Fork is free for everyone :)
+Fork and feed for free :)
