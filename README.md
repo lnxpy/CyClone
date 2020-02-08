@@ -1,5 +1,6 @@
 # CyClone 🌀
 <p align="center">
+  <br>
   <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/temp.svg" width="140">
   <br>
   <br>
