@@ -16,6 +16,7 @@ def main():
         })[0]
     else:
         modules.progress(False)
+        return
 
     if status:
         data = vars(args)
