@@ -21,6 +21,26 @@ First, you need to clone this repository then, start running into it and fill up
 
 First of all, CyClone checks up your git and tries to pull all changes from the Github server to your local environment. Then, reinstalls all new packages from the requirements file and updates importing module lists.
 
+## Setting up
+
+After cloned the repository, install the requirements to make the main script ready to get in the work as follows.
+```
+cyclone$ pip3 install -r requirements.txt
+```
+When the installation finished up, you need to run the script and fill both `SOURCE` and `REPOSITORY` options up. Take a look at the following table to be informed about the options.
+
+| Short Form    | Standard Form    | Descryption                    |
+| :-----------: | :--------------: | :----------------------------: |
+| `-r`          | `--repository`   | repository address             |
+| `-s`          | `--source`       | library list source file (mostly `requirements.txt`) |
+
+| Examples                                                  |
+| --------------------------------------------------------- |
+| `python3 cyclone.py -r lnxpy/postern -s requirements.txt` |
+| `python3 cyclone.py -r sys313/negar -s requires.txt`      |
+
+Once you fill up all the options correctly, you will have such a status:
+
 ## License
 Licensed from [MIT](https://opensource.org/licenses/MIT).
 
