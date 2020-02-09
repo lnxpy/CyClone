@@ -3,8 +3,8 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-r', '--repository',help='github python repository')
-    parser.add_argument('-s', '--source', help='source file (e.g requirements.txt)')
+    parser.add_argument('--repository', '-r', help='github python repository')
+    parser.add_argument('--source', '-s', help='source file (e.g requirements.txt)')
     args = parser.parse_args()
 
     modules.introducer()
@@ -19,9 +19,9 @@ def main():
         return
 
     if status:
-        data = vars(args)
-        print(data)
-
+        modules.updater(vars(args))
+    else:
+        print(settings.information)
 
 if __name__ == '__main__':
     main()

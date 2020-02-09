@@ -1,5 +1,4 @@
 from . import settings
-from time import sleep as slp
 from requests import get
 import os.path
 
@@ -21,8 +20,10 @@ def progress(events):
     errors = True
     for key,value in zip(events.keys(),events.values()):
         if key == 'repository':
+            direction = {'username':value.split('/')[0],'repository':value.split('/')[1].lower()}
             print(' [%s] %s %s'%(settings.cyan+'CHECK'+settings.reset,settings.bold + value + settings.reset,key))
-            if get(value).status_code == 200:
+            connection = get('https://api.github.com/users/%s/repos'%direction['username'])
+            if connection.status_code == 200 and direction['repository'] in [i['name'].lower() for i in connection.json()]:
                 print(' [%s] %s found'%(settings.cyan+'CHECK'+settings.reset,settings.bold + value.split('/')[-1] + settings.reset))
             else:
                 errors = False
@@ -35,3 +36,6 @@ def progress(events):
                 errors = False
                 print(' [%s] %s'%(settings.red+'ERROR'+settings.reset, settings.bold + value + settings.reset + ' not found'))
     return [True if errors else False]
+
+def updater(configs):
+    print(configs)
