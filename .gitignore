@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 
 # CyClone
-disk/_conf.json
+disk/*
+!disk/DONT_CHANGE_THIS_DIR
+!disk/README.md
