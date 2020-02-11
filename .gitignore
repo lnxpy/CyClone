@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # CyClone
-disk/_conf.cnf
+disk/_conf.json
