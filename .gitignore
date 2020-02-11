@@ -127,8 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# CyClone
-disk/*
-!disk/DONT_CHANGE_THIS_DIR
-!disk/README.md
