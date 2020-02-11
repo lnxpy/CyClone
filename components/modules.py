@@ -31,11 +31,11 @@ def progress(events):
         elif key == 'source':
             print(' [%s] %s %s'%(settings.cyan+'CHECK'+settings.reset,settings.bold + value + settings.reset,key))
             if os.path.isfile(events[key]):
-                print(' [%s] %s source file found'%(settings.cyan+'CHECK'+settings.reset,settings.bold + value + settings.reset))
-            else:
-                errors = False
-                print(' [%s] %s'%(settings.red+'ERROR'+settings.reset, settings.bold + value + settings.reset + ' not found'))
-    return [True if errors else False]
+                print(' [%s] %s source file selected as the default one'%(settings.cyan+'CHECK'+settings.reset,settings.bold + value + settings.reset))
+    return [[True, connection.json()] if errors else False]
 
-def updater(configs):
-    print(configs)
+def printer(text=['ERROR', 'https://github.com/lnxpy/cyclone for more information']):
+    if text[0] == 'ERROR':
+        print(' [%s] %s'%(settings.red + 'ERROR' + settings.reset, text[1]))
+    else:
+        print(' [%s] %s'%(settings.cyan + 'CHECK' + settings.reset, text[1]))

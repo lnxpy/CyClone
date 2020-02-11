@@ -46,5 +46,3 @@ blue = colors.fg.blue
 reset = colors.reset
 under = colors.underline
 bold = colors.bold
-
-information = ' [%s] %s'%(red+'ERROR'+reset, 'https://github.com/lnxpy/cyclone'+bold+' for more informations'+reset)
