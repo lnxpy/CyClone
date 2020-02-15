@@ -24,7 +24,8 @@ def main():
         configs = status[1]
         configs.append(vars(args))
         with open('./disk/conf.json', 'w') as conf_file:
-            json.dump(configs, conf_file)
+            print(configs)
+            json.dump(configs[-1], conf_file)
         modules.printer(['CHECK', 'config file created'])
     else:
         modules.printer()
