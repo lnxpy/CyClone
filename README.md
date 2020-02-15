@@ -17,6 +17,12 @@
 CyClone is kind of Python-Package-Updater that allows users to create an updater-version of their python project and make them available on their Github. Although users can update their local cloned repository with their own selves, getting stuck in a bunch of files and modules and trying to get out of them can be little bit noisy.
 First, you need to clone this repository then, start running into it and fill up your fields.
 
+<p align="center">
+  <br>
+  <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/texture.png" width="500">
+  <br>
+</p>
+
 ## How CyClone Works?
 
 First of all, CyClone checks up your git and tries to pull all changes from the Github server to your local environment. Then, reinstalls all new packages from the requirements file and updates importing module lists.
@@ -60,7 +66,7 @@ disk
 
 ## Time to Run up
 
-Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **Config file should not be modified ever**.
+Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **The configuration file should not be modified ever**.
 
 ## License
 Licensed from [MIT](https://opensource.org/licenses/MIT).
