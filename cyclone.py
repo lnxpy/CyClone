@@ -4,7 +4,7 @@ import json
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--repository', '-r', help='github python repository')
+    parser.add_argument('--repository', '-r', help='github python repository -> username/repository')
     parser.add_argument('--source', '-s', help='source file (e.g requirements.txt)')
     args = parser.parse_args()
 
