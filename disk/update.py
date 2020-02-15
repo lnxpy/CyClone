@@ -55,6 +55,14 @@ def update(repo, source):
     for step in steps:
         os.system('git %s'%step)
 
+    printer('Git is pulling from the cloud\n')
+    slp(2)
+
+    try:
+        os.system('git pull')
+    except Exception as e:
+        printer('an error occurred for pulling %s'%s, 'ERROR')
+
 def printer(text, stat='CHECK'):
     print(' [%s] %s'%(stat, text))
 
