@@ -50,13 +50,18 @@ Once you fill up all the options correctly, you will have such a status:
 Now, It's time the check the new path `disk/`. Let's take a tree from this directory and see what we have. You should not modify this directory because all of them are attached to eachother.
 ```
 disk
-├── _conf.json
+├── conf.json
 ├── DONT_CHANGE_THIS_DIR
-├── README.md
+├── ReadMe.txt
 └── update.py
 
 0 directories, 4 files
 ```
+
+## Time to Run up
+
+Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **Config file should not be modified ever**.
+
 ## License
 Licensed from [MIT](https://opensource.org/licenses/MIT).
 
