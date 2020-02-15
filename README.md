@@ -66,7 +66,7 @@ disk
 
 ## Time to Run up
 
-Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **The configuration file should not be modified ever**.
+Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **The configuration file should not be modified ever and also you need to be permitted as the root user to be able to update the local repository**.
 
 ## License
 Licensed from [MIT](https://opensource.org/licenses/MIT).
