@@ -1,5 +1,7 @@
 import os
 import json
+from shutil import which
+from time import sleep as slp
 
 mark = """
   _____     _______
@@ -16,29 +18,42 @@ mark = """
 
 is_permitted = True if os.getenv("SUDO_USER") else False
 
+steps = ['add -A ',
+         'commit -m \'CyClone-Updater Commited\'']
+
 def main():
     print(mark)
 
-    # Negative this part
-    if is_permitted:
+    if not is_permitted:
         printer('Permission denied', 'ERROR')
         return
 
-    if os.path.isfile('_conf.json'):
+    if os.path.isfile('conf.json'):
         printer('Configs found')
     else:
         printer('Configuration could not be found', 'ERROR')
         return
 
     try:
-        with open('_conf.json') as json_file:
+        with open('conf.json') as json_file:
             configs = json.load(json_file)
     except Exception as e:
         printer('Configuration file has been currepted', 'ERROR')
 
-    print('NOW YOU ARE ROOT AND HAVE CONFIGURATIONS')
-    print(is_permitted)
-    print(configs[-1])
+    repo, source = configs['repository'], configs['source']
+
+    if which('git'):
+        update(repo, source)
+    else:
+        printer('be sure that the git software has been already installed', 'ERROR')
+        return
+
+def update(repo, source):
+    printer('running the Git')
+    #slp(2)
+
+    for step in steps:
+        os.system('git %s'%step)
 
 def printer(text, stat='CHECK'):
     print(' [%s] %s'%(stat, text))
