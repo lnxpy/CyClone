@@ -49,7 +49,7 @@ def main():
         return
 
 def update(repo, source):
-    printer('running the Git')
+    printer('running the Git\n')
     #slp(2)
 
     for step in steps:
