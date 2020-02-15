@@ -62,6 +62,9 @@ def update(repo, source):
         os.system('git pull')
     except Exception as e:
         printer('an error occurred for pulling %s'%s, 'ERROR')
+        return
+
+    printer('%s updated successfully'%repo.split('/')[1])
 
 def printer(text, stat='CHECK'):
     print(' [%s] %s'%(stat, text))
