@@ -23,7 +23,7 @@ def main():
         modules.printer(['CHECK', 'configuration started'])
         configs = status[1]
         configs.append(vars(args))
-        with open('./disk/_conf.json', 'w') as conf_file:
+        with open('./disk/conf.json', 'w') as conf_file:
             json.dump(configs, conf_file)
         modules.printer(['CHECK', 'config file created'])
     else:
