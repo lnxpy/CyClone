@@ -6,7 +6,7 @@
   <br>
   <span>★ Make Updater Scripts for Your Python Projects ★</span>
   <br>
-  <span>Build it ∘ Cross it ∘ Update it</span>
+  <span>Build It ∘ Cross It ∘ Update It</span>
   <br>
   <br>
   <a href="#"><img src="https://img.shields.io/github/issues/lnxpy/cyclone?style=flat-square" alt="Version" style="max-width:100%;"></a>
