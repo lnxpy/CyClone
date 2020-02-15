@@ -1,4 +1,4 @@
-# CyClone :cyclone:
+# CyClone v1.0 :cyclone:
 <p align="center">
   <br>
   <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/temp.svg" width="140">
