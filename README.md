@@ -1,4 +1,4 @@
-# CyClone :cyclone:
+## CyClone :cyclone:
 <p align="center">
   <br>
   <img src="https://github.com/lnxpy/Cyclone/blob/master/icons/temp.svg" width="140">
@@ -23,11 +23,11 @@ First, you need to clone this repository then, start running into it and fill up
   <br>
 </p>
 
-## How CyClone Works?
+### How CyClone Works?
 
 First of all, CyClone checks up your git and tries to pull all changes from the Github server to your local environment. Then, reinstalls all new packages from the requirements file and updates importing module lists.
 
-## Setting up
+### Setting up
 
 After cloned the repository, install the requirements to make the main script ready to get in the work as follows.
 ```
@@ -64,12 +64,12 @@ disk
 0 directories, 4 files
 ```
 
-## Time to Run up
+### Time to Run up
 
 Copy the all contents of the `disk/` directory into your python local repository and push it up to the cloud side. Now make a change in your github repository and try to fetch it up in your local system using the `update.py` file. **The configuration file should not be modified ever and also you need to be permitted as the root user to be able to update the local repository**.
 
-## License
+### License
 Licensed from [MIT](https://opensource.org/licenses/MIT).
 
-## Fork
+### Fork
 Fork and feed for free :)
